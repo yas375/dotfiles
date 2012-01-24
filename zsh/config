@@ -1,6 +1,10 @@
 # load and prepare data for showing git info in prompt
 autoload -U vcs_info
 
+
+# completions with menu
+zstyle ':completion:*' menu select
+
 zstyle ':vcs_info:*' enable git svn
 zstyle ':vcs_info:*' actionformats '(%s)-[%b|%a] '
 zstyle ':vcs_info:*' formats       '(%s)-[%b] '
