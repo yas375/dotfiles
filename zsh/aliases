@@ -2,36 +2,10 @@
 alias ..='cd ..'
 
 # ls
-alias ls="ls -GF"
-alias ll="ls -lah"
-alias la='ls -A'
 alias less='less -R'
 
-alias grep='grep --color=always'
 alias pwgen='pwgen -1cnsB'
 alias ack='ack -a'
 
-# git
-alias gl='git pull'
-alias gp='git push'
-alias gd='git diff'
-alias gc='git commit'
-alias gca='git commit -a'
-alias gco='git checkout'
-alias gb='git branch'
-alias gs='git status'
-alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
-alias changelog='git log `git log -1 --format=%H -- CHANGELOG*`..; cat CHANGELOG*'
-
 # rails
-alias sc='script/console'
-alias ss='script/server'
-alias sg='script/generate'
-alias a='autotest -rails'
-alias tlog='tail -f log/development.log'
-alias scaffold='script/generate nifty_scaffold'
-alias migrate='rake db:migrate db:test:clone'
 alias trt='touch tmp/restart.txt'
-
-# commands starting with % for pasting from web
-alias %=' '

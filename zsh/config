@@ -1,64 +1,6 @@
-# load and prepare data for showing git info in prompt
-autoload -U vcs_info
-
-
-# completions with menu
-zstyle ':completion:*' menu select
-
-zstyle ':vcs_info:*' enable git svn
-zstyle ':vcs_info:*' actionformats '(%s)-[%b|%a] '
-zstyle ':vcs_info:*' formats       '(%s)-[%b] '
-zstyle ':vcs_info:(sv[nk]|bzr):*' branchformat '%b'
-precmd() {
-  print -Pn "\e]0;%~\a"
-  vcs_info
-}
-
-# Prompt
-if [[ -n $SSH_CONNECTION ]]; then
-  export PS1='%m:%3~$(git_info_for_prompt)%# '
-else
-  export PS1='%B%F{blue}%~%f%b ${vcs_info_msg_0_}%B%F{blue}%#%f%b '
-  RPROMPT='%B%F{green}%T'
-fi
-
 export EDITOR='vim'
-export PATH="$HOME/apps/bin:$HOME/bin:$HOME/.bin:/usr/local/homebrew/bin:/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/usr/local/git/bin:$PATH"
-export MANPATH="/usr/local/man:/usr/local/mysql/man:/usr/local/git/man:$MANPATH"
+export PATH="$HOME/apps/bin:$PATH"
 
 fpath=(~/.zsh/functions $fpath)
 
 autoload -U ~/.zsh/functions/*(:t)
-
-HISTFILE=~/.zsh_history
-HISTSIZE=1000
-SAVEHIST=1000
-REPORTTIME=10 # print elapsed time when more than 10 seconds
-
-setopt NO_BG_NICE # don't nice background tasks
-setopt NO_HUP
-setopt NO_LIST_BEEP
-setopt LOCAL_OPTIONS # allow functions to have local options
-setopt LOCAL_TRAPS # allow functions to have local traps
-setopt HIST_VERIFY
-setopt SHARE_HISTORY # share history between sessions ???
-setopt EXTENDED_HISTORY # add timestamps to history
-setopt PROMPT_SUBST
-setopt COMPLETE_IN_WORD
-
-setopt NO_AUTOMENU # disable selectiog of completion variants by tab tapping
-
-setopt APPEND_HISTORY # adds history
-setopt INC_APPEND_HISTORY SHARE_HISTORY  # adds history incrementally and share it across sessions
-setopt HIST_IGNORE_ALL_DUPS  # don't record dupes in history
-setopt HIST_REDUCE_BLANKS
-
-zle -N newtab
-
-bindkey '^[^[[D' backward-word
-bindkey '^[^[[C' forward-word
-bindkey '^[[5D' beginning-of-line
-bindkey '^[[5C' end-of-line
-bindkey '^[[3~' delete-char
-bindkey '^[^N' newtab
-bindkey '^?' backward-delete-char
