@@ -1,12 +1,13 @@
-= Ryan Bates Dot Files
+= Ryan Bates Dot Files with my modifications
 
 These are config files to set up a system the way I like it.
-
+Also added oh-my-zsh and emacs-config as submodules.
 
 == Installation
 
-  git clone git://github.com/ryanb/dotfiles ~/.dotfiles
+  git clone git://github.com/yas375/dotfiles ~/.dotfiles
   cd ~/.dotfiles
+  git submodule update --init --recursive
   rake install
 
 
