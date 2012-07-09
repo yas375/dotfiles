@@ -11,4 +11,4 @@ alias ack='ack -a'
 alias trt='touch tmp/restart.txt'
 
 # cocoa pods
-alias pod-dev='rvm ruby-1.9.3-p125@cocoapods do $HOME/code/CocoaPods/bin/pod'
+alias pod-dev='rvm ruby-1.9.3-p194@cocoapods do $HOME/code/CocoaPods/bin/pod'
