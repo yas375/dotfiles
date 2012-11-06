@@ -1,0 +1,11 @@
+#!/bin/sh
+
+REPO="$1"
+OUTFILE="$2"
+
+gource -s 2 -i 20 -a 1 --stop-at-end \
+  --output-ppm-stream - --output-framerate 25 \
+  --multi-sampling \
+  --highlight-all-users "$REPO" | \
+  \
+  ffmpeg -y -b 6000K -r 25 -f image2pipe -vcodec ppm -i - -vcodec h264 "$OUTFILE"
