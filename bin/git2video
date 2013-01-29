@@ -3,9 +3,10 @@
 REPO="$1"
 OUTFILE="$2"
 
-gource -s 2 -i 20 -a 1 --stop-at-end \
+gource -1280x720 --seconds-per-day 2 --file-idle-time 20 --auto-skip-seconds 1 \
+  --stop-at-end \
+  --user-image-dir .git/avatar/ \
   --output-ppm-stream - --output-framerate 25 \
-  --multi-sampling \
-  --highlight-all-users "$REPO" | \
+  --multi-sampling | \
   \
   ffmpeg -y -b 6000K -r 25 -f image2pipe -vcodec ppm -i - -vcodec h264 "$OUTFILE"
