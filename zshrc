@@ -32,7 +32,7 @@ ZSH_THEME="robbyrussell"
 plugins=(bundler, git, rails, ruby, textmate)
 
 source $ZSH/oh-my-zsh.sh
-unsetopt correct_all
+unsetopt correct
 
 #### Customize to your needs...
 . ~/.zsh/config
