@@ -1,5 +1,5 @@
 export EDITOR='vim'
-export PATH="/usr/local/share/python:$HOME/.bin:/usr/local/bin:$PATH"
+export PATH="/usr/local/share/npm/bin:/usr/local/share/python:$HOME/.bin:/usr/local/bin:$PATH"
 
 fpath=(~/.zsh/functions $fpath)
 
