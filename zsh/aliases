@@ -7,6 +7,8 @@ alias less='less -R'
 alias pwgen='pwgen -1cnsB'
 alias ack='ack -a'
 
+alias edit='emacs'
+
 # rails
 alias trt='touch tmp/restart.txt'
 
