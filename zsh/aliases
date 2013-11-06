@@ -5,15 +5,12 @@ alias ..='cd ..'
 alias less='less -R'
 
 alias pwgen='pwgen -1cnsB'
-alias ack='ack -a'
-
-alias edit='emacs'
 
 # rails
 alias trt='touch tmp/restart.txt'
 
-# cocoa pods
-alias pod-dev='rvm ruby-1.9.3-p194@cocoapods do $HOME/code/CocoaPods/bin/pod'
+# CocoaPods
+alias pod-dev='$HOME/code/CocoaPods/bin/pod'
 
 # Having one more dropbox account
 alias dropbox-work='HOME=$HOME/Carezone /Applications/Dropbox.app/Contents/MacOS/Dropbox &'

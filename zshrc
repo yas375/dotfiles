@@ -40,9 +40,7 @@ source $ZSH/oh-my-zsh.sh
 . ~/.zsh/aliases
 . ~/.zsh/completion
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
+export ARCHFLAGS="-arch x86_64"
 
 # use .localrc for settings specific to one system
 [[ -f ~/.localrc ]] && . ~/.localrc
-
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
