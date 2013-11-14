@@ -41,6 +41,7 @@ source $ZSH/oh-my-zsh.sh
 . ~/.zsh/completion
 
 export ARCHFLAGS="-arch x86_64"
+export LC_ALL="en_US.UTF-8"
 
 # use .localrc for settings specific to one system
 [[ -f ~/.localrc ]] && . ~/.localrc
