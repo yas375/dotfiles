@@ -14,3 +14,5 @@ alias pod-dev='$HOME/code/CocoaPods/bin/pod'
 
 # Having one more dropbox account
 alias dropbox-work='HOME=$HOME/Carezone /Applications/Dropbox.app/Contents/MacOS/Dropbox &'
+
+alias subl="/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl"
