@@ -16,3 +16,8 @@ alias pod-dev='$HOME/code/CocoaPods/bin/pod'
 alias dropbox-work='HOME=$HOME/Carezone /Applications/Dropbox.app/Contents/MacOS/Dropbox &'
 
 alias subl="/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl"
+
+# More "l"s => more detail
+alias gl='git log --oneline --decorate'
+alias gll='git log --oneline --decorate --graph'
+alias glll='git log --decorate --graph'
