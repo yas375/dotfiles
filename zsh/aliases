@@ -21,3 +21,6 @@ alias subl="/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl"
 alias gl='git log --oneline --decorate'
 alias gll='git log --oneline --decorate --graph'
 alias glll='git log --decorate --graph'
+
+# iOS development
+alias swift='/Applications/Xcode6-Beta4.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swift'
