@@ -1,6 +1,8 @@
 #!/bin/bash 
 #
-# Prune local tracking branches that have been removed upstream. Note that `git fetch -prune` will not work on local branches.
+# Prune local tracking branches that have been removed upstream.
+# Your remote tracking branches can be removed automatically by setting `fetch.prune` to true or running `git fetch -prune`.
+# Another command to clean up your remote tracking branches is `git remote prune <remote>`.
 #
 # Author: @leshill
 # https://gist.github.com/leshill/9a1088a17f94cef24831
