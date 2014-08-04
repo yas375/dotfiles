@@ -10,7 +10,7 @@
 if [[ $# = 1 && $1 == '-n' ]]; then 
   git branch -vv | grep ' gone]' 
 elif [[ $# = 1 && $1 == 'all' ]]; then 
-  git branch -vv | grep ' gone]' | egrep -v '^\*' | cut -f 3 -d ' ' | xargs git branch -D 
+  git branch -vv | grep ' gone]' | egrep -v '^\*' | cut -f 3 -d ' ' | xargs git branch -d
 else 
   echo "usage: git prunelocal [-n | all]" 
   echo "  -n : dry run, show what will be pruned and the current branch if remote gone" 
