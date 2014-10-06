@@ -10,7 +10,7 @@ alias pwgen='pwgen -1cnsB'
 alias trt='touch tmp/restart.txt'
 
 # CocoaPods
-alias pod-dev='$HOME/code/CocoaPods/bin/pod'
+alias pod-dev='COCOA_PODS_ENV=development $HOME/code/Rainforest/CocoaPods/bin/pod'
 
 # Having one more dropbox account
 alias dropbox-work='HOME=$HOME/Carezone /Applications/Dropbox.app/Contents/MacOS/Dropbox &'
