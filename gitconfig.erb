@@ -6,6 +6,7 @@
   st = status
   ci = commit
   bv = branch -vv
+  lg = log --graph --pretty=format:'%C(yellow)%h%Creset%Cblue%d%Creset %s %C(green)(%cr)%Creset' --abbrev-commit
 [color]
   ui = auto
   diff = auto
@@ -21,7 +22,12 @@
 [github]
   user = <%= print("GitHub Username: "); STDOUT.flush; STDIN.gets.chomp %>
   token = <%= print("GitHub API Token: "); STDOUT.flush; STDIN.gets.chomp %>
-[push]
-  default = current
+[filter "media"]
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f
 [fetch]
   prune = true
+[push]
+  default = current
+[rebase]
+	autosquash = true
