@@ -5,3 +5,6 @@
 
 # xcode
 xcuserdata
+
+# Injection Plugin for Xcode (https://github.com/johnno1962/injectionforxcode)
+iOSInjectionProject/
