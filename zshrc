@@ -45,3 +45,6 @@ export LC_ALL="en_US.UTF-8"
 
 # use .localrc for settings specific to one system
 [[ -f ~/.localrc ]] && . ~/.localrc
+
+# added by travis gem
+[ -f /Users/yas/.travis/travis.sh ] && source /Users/yas/.travis/travis.sh

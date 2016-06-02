@@ -11,3 +11,6 @@ if [ -f ~/.localrc ]; then
   source ~/.localrc
 fi
 
+
+# added by travis gem
+[ -f /Users/yas/.travis/travis.sh ] && source /Users/yas/.travis/travis.sh
