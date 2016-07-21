@@ -5,6 +5,7 @@ alias ..='cd ..'
 alias less='less -R'
 
 alias pwgen='pwgen -1cnsB'
+alias cdtemp='cd `mktemp -d`'
 
 # rails
 alias trt='touch tmp/restart.txt'
