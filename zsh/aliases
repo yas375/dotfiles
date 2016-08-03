@@ -16,7 +16,7 @@ alias pod-dev='COCOA_PODS_ENV=development $HOME/code/Rainforest/CocoaPods/bin/po
 # Having one more dropbox account
 alias dropbox-work='HOME=$HOME/Carezone /Applications/Dropbox.app/Contents/MacOS/Dropbox &'
 
-alias subl="/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl"
+alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 
 # More "l"s => more detail
 alias gl='git log --oneline --decorate'
