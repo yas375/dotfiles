@@ -1,5 +1,6 @@
 export EDITOR='vim'
 export PATH="/usr/local/share/npm/bin:$HOME/.bin:/usr/local/bin:/usr/local/sbin:$PATH"
+export PATH="/usr/local/opt/qt@5.5/bin:$PATH"
 
 fpath=(~/.zsh/functions $fpath)
 
