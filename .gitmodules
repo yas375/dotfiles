@@ -4,12 +4,6 @@
 [submodule "emacs.d"]
 	path = emacs.d
 	url = git@github.com:yas375/emacs-config.git
-[submodule "Xcode-Snippets"]
-	path = Xcode-Snippets
-	url = https://github.com/yas375/Xcode-Snippets.git
-[submodule "chisel"]
-	path = chisel
-	url = git@github.com:facebook/chisel.git
 [submodule "zsh/plugins/zsh-syntax-highlighting"]
 	path = zsh/plugins/zsh-syntax-highlighting
 	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
