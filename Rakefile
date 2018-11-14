@@ -30,7 +30,6 @@ task :install do
       link_file(file)
     end
   end
-  setup_xcode_snippets
 end
 
 def replace_file(file)
@@ -50,6 +49,3 @@ def link_file(file)
   end
 end
 
-def setup_xcode_snippets
-  system %Q{cd Xcode-Snippets && rake install}
-end
