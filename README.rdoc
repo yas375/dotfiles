@@ -5,7 +5,7 @@ Also added oh-my-zsh and emacs-config as submodules.
 
 == Installation
 
-  git clone git://github.com/yas375/dotfiles ~/.dotfiles
+  git clone git@github.com:yas375/dotfiles.git ~/.dotfiles
   cd ~/.dotfiles
   git submodule update --init --recursive
   rake install
