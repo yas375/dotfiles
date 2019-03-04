@@ -6,6 +6,7 @@ alias less='less -R'
 
 alias pwgen='pwgen -1cnsB'
 alias cdtemp='cd `mktemp -d`'
+alias git='hub'
 
 # rails
 alias trt='touch tmp/restart.txt'
