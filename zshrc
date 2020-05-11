@@ -31,7 +31,7 @@ DISABLE_CORRECTION="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(bundler colored-man-pages git you-should-use zsh-navigation-tools)
+plugins=(bundler colored-man-pages git fzf)
 
 source $ZSH/oh-my-zsh.sh
 
