@@ -36,7 +36,7 @@
 [rebase]
   autosquash = true
 [commit]
-  gpgsign = true
+  gpgsign = false
 [color "diff-highlight"]
   oldNormal = red bold
   oldHighlight = red bold 52
@@ -49,3 +49,17 @@
   old = red bold
   new = green bold
   whitespace = red reverse
+[diff-so-fancy]
+  markEmptyLines = false
+  stripLeadingSymbols = false
+[filter "lfs"]
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
+  process = git-lfs filter-process
+  required = true
+[difftool "Kaleidoscope"]
+  cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+[difftool]
+  prompt = false
+[diff]
+  tool = Kaleidoscope
