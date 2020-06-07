@@ -1,7 +1,4 @@
 export EDITOR='vim'
-export PATH="/usr/local/share/npm/bin:$HOME/.bin:/usr/local/bin:/usr/local/sbin:$PATH"
-export PATH="/usr/local/opt/qt@5.5/bin:$PATH"
-export PATH="$HOME/Library/Python/3.7/bin:$PATH"
 
 fpath=(~/.zsh/functions $fpath)
 
@@ -22,23 +19,9 @@ function improved_git_prompt_info() {
 
 PROMPT='%{$fg_bold[red]%}➜ %{$fg_bold[green]%}%p %{$fg[cyan]%}%c %{$fg_bold[blue]%}$(improved_git_prompt_info)%{$fg_bold[blue]%} % %{$reset_color%}'
 
-source /Users/yas/.rvm/scripts/rvm
-
 export RUBY_HEAP_SLOTS_INCREMENT=1000000
 export RUBY_HEAP_SLOTS_GROWTH_FACTOR=1
 export RUBY_GC_MALLOC_LIMIT=1000000000
 export RUBY_HEAP_FREE_MIN=500000
 
 source ~/.zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-# make specjour happy
-export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
-
-# Node version manager
-export NVM_DIR="$HOME/.nvm"
-[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
-[ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"  # This loads nvm bash_completion
-
-
-source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'
-source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'
