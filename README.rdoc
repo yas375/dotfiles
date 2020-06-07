@@ -1,4 +1,4 @@
-= Ryan Bates Dot Files with my modifications
+= Dot files
 
 These are config files to set up a system the way I like it.
 Also added oh-my-zsh and emacs-config as submodules.
@@ -10,12 +10,11 @@ Also added oh-my-zsh and emacs-config as submodules.
   git submodule update --init --recursive
   rake install
 
-
 == Environment
 
-I am running on Mac OS X, but it will likely work on Linux as well with 
-minor fiddling. I primarily use zsh, but this includes some older bash 
-files as well. If you would like to switch to zsh, you can do so with 
+I am running on macOS, but it will likely work on Linux as well with
+minor fiddling. I primarily use zsh, but this includes some older bash
+files as well. If you would like to switch to zsh, you can do so with
 the following command.
 
   chsh -s /bin/zsh
@@ -24,8 +23,8 @@ the following command.
 
 === Additional Aliases
 
-If there are some shell configuration settings which you want secure or 
-specific to one system, place it into a ~/.localrc file. This will be 
+If there are some shell configuration settings which you want secure or
+specific to one system, place it into a ~/.localrc file. This will be
 loaded automatically if it exists.
 
 === RVM
@@ -34,19 +33,19 @@ If using RVM, run the following command to place the sourcing script in your .lo
 
   echo '[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function' >> ~/.localrc
   source ~/.localrc
-  
+
 To test:
 
   type rvm | head -1
 
 == Features
 
-I normally place all of my coding projects in ~/code, so this directory 
+I normally place all of my coding projects in ~/code, so this directory
 can easily be accessed (and tab completed) with the "c" command.
 
   c railsca<tab>
 
-There is also an "h" command which behaves similar, but acts on the 
+There is also an "h" command which behaves similar, but acts on the
 home path.
 
   h doc<tab>
