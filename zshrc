@@ -98,5 +98,9 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# Functions and their autocompletion
+fpath=(~/.zsh/functions $fpath)
+autoload -U ~/.zsh/functions/*(:t)
+
 # use .localrc for settings specific to one system
 [[ -f ~/.localrc ]] && . ~/.localrc
