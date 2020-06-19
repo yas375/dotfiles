@@ -1,6 +1,0 @@
-autoload -U compinit
-compinit
-
-# https://github.com/tmuxinator/tmuxinator/blob/master/completion/tmuxinator.zsh
-source ~/.zsh/completions/tmuxinator.zsh
-
