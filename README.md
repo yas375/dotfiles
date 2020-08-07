@@ -8,7 +8,6 @@
 
 ```sh
 brew install fzf # fuzzy finder
-brew install hub
 brew install diff-so-fancy
 brew install chisel
 brew install tig
@@ -17,11 +16,9 @@ brew install ag
 brew cask install iTerm2
 brew cask install Rectangle
 
-git clone https://github.com/yas375/dotfiles.git ~/.dotfiles
+git clone git@github.com:yas375/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
 git submodule update --init --recursive
 rake
 ```
-
-- Make iTerm to read config from this repo (iTerm -> Preferences -> General -> Preferences -> Load...)
 
