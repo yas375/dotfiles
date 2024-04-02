@@ -6,3 +6,5 @@
 # xcode
 xcuserdata
 
+# Reality Composer Pro
+*.rcuserdata
