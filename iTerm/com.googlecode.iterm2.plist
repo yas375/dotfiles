@@ -242,8 +242,6 @@
 				<key>Red Component</key>
 				<real>0.0806884765625</real>
 			</dict>
-			<key>Background Image Location</key>
-			<string></string>
 			<key>Badge Color</key>
 			<dict>
 				<key>Alpha Component</key>
