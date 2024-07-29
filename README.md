@@ -7,14 +7,9 @@
 - Install VS Code
 
 ```sh
-brew install fzf # fuzzy finder
-brew install diff-so-fancy
-brew install chisel
-brew install tig
-brew install ag
+brew install fzf diff-so-fancy tig ag
 
-brew cask install iTerm2
-brew cask install Rectangle
+brew cask install iTerm2 Rectangle
 
 git clone git@github.com:yas375/dotfiles.git ~/.dotfiles
 touch .local.gitconfig
