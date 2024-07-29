@@ -1,6 +1,5 @@
-[user]
-  name = <%= print("Your Name: "); STDOUT.flush; STDIN.gets.chomp %>
-  email = <%= print("Your Email: "); STDOUT.flush; STDIN.gets.chomp %>
+[include]
+  path = .local.gitconfig
 [alias]
   co = checkout
   st = status
@@ -22,9 +21,6 @@
   whitespace = nowarn
 [format]
   pretty = %C(yellow)%h%Creset %s %C(red)(%an, %cr)%Creset
-[github]
-  user = <%= print("GitHub Username: "); STDOUT.flush; STDIN.gets.chomp %>
-  token = <%= print("GitHub API Token: "); STDOUT.flush; STDIN.gets.chomp %>
 [filter "media"]
   clean = git-media-clean %f
   smudge = git-media-smudge %f
@@ -34,8 +30,6 @@
   default = current
 [rebase]
   autosquash = true
-[commit]
-  gpgsign = false
 [color "diff-highlight"]
   oldNormal = red bold
   oldHighlight = red bold 52
@@ -56,9 +50,3 @@
   smudge = git-lfs smudge -- %f
   process = git-lfs filter-process
   required = true
-[difftool "Kaleidoscope"]
-  cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
-[difftool]
-  prompt = false
-[diff]
-  tool = Kaleidoscope

@@ -17,6 +17,7 @@ brew cask install iTerm2
 brew cask install Rectangle
 
 git clone git@github.com:yas375/dotfiles.git ~/.dotfiles
+touch .local.gitconfig
 cd ~/.dotfiles
 git submodule update --init --recursive
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
