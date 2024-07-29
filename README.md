@@ -12,7 +12,7 @@ brew install fzf diff-so-fancy tig ag
 brew cask install iTerm2 Rectangle
 
 git clone git@github.com:yas375/dotfiles.git ~/.dotfiles
-touch .local.gitconfig
+touch ~/.local.gitconfig
 cd ~/.dotfiles
 git submodule update --init --recursive
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
@@ -27,3 +27,4 @@ This shouldn't be needed if I use my config.
 
 * Settings > Profiles > General > Working Directory > Reuse Previous session's directory
 * Settings > Profiles > Keys > Key Mappings > Presets > Natural Text Editing
+* Settings > Profiles > Colors > Editing > Dark Mode
