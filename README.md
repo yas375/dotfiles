@@ -25,15 +25,9 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
 rake
 ```
 
-## iTerm
-
-Settings > General > Preferences
-* Enable "Load prefences from a custom folder or URL".
-* `~/.dotfiles/iTerm`
-
 ### Manual
 
 This shouldn't be needed if I use my config.
 
-* Settings > Profile > General > Working Directory > Reuse Previous session's directory
-* Settings > Profile > Keys > Ley Mappings > Presets > Natural Text Editing
+* Settings > Profiles > General > Working Directory > Reuse Previous session's directory
+* Settings > Profiles > Keys > Key Mappings > Presets > Natural Text Editing
