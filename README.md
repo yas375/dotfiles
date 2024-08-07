@@ -21,10 +21,35 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 ```
 
-### Manual
-
-This shouldn't be needed if I use my config.
+### iTerm
 
 * Settings > Profiles > General > Working Directory > Reuse Previous session's directory
 * Settings > Profiles > Keys > Key Mappings > Presets > Natural Text Editing
 * Settings > Profiles > Colors > Editing > Dark Mode
+* Settings > Profiles > Terminal > Unlimited scrollback: On
+
+### Rectangle
+
+Use legacy key mappings.
+
+Conflict with mac’s "drag to corners"? Keep mac’s.
+
+Settings -> Keys
+Top left: cmd + option + shift + arrow left
+Top right:  cmd + option + shift + arrow right
+
+### Xcode
+
+Setting > Text Editing > Editing > Include whitespace-only lines
+Setting > Text Editing > Editing > Reformat code at column 120
+Setting > Text Editing > Editing > Show reformatting guide
+Setting > Text Editing > Indentation > Re-Indent on paste
+
+#### Add "focus" behavior
+
+Xcode > Behaviors > Create
+Name: Focus
+Hide navigator
+Hide debugger
+Hide inspectors
+Shortcut: cmd+ctrl+shift+enter. "Override existing Focus? - Yes"
